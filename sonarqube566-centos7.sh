@@ -44,6 +44,7 @@ sudo unzip sonarqube-5.6.6.zip
 
 cp /opt/sonarqube-5.6.6/conf/sonar.properties /opt/sonarqube-5.6.6/conf/sonar.properties.orig
 echo -e '\n' >> /opt/sonarqube-5.6.6/conf/sonar.properties
+echo -e 'sonar.web.host=127.0.0.1\n' >> /opt/sonarqube-5.6.6/conf/sonar.properties
 echo -e 'sonar.jdbc.username=sonarqube\n' >> /opt/sonarqube-5.6.6/conf/sonar.properties
 echo -e 'sonar.jdbc.password=Admin@123\n' >> /opt/sonarqube-5.6.6/conf/sonar.properties
 echo sonar.jdbc.url='jdbc:mysql://localhost:3306/sonarqube?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance' >> /opt/sonarqube-5.6.6/conf/sonar.properties
